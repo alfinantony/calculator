@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <br>
+    <br> <br>
+
+    <div class="cal-b">
+    <h1 style="text-align: center; color: whitesmoke ;">Calculator</h1>
+
+    
+
+    <div class="calc-body">
+
+        <!-- Calculator display screen -->
+        <div class="calc-screen">
+            <div id="calc-tyed">
+                <input  id="result" type="text" class="form-control" placeholder="Enter the number"> 
+            </div>
+        </div>
+
+
+        <!-- calculator button -->
+
+        <div class="calc-button-row">
+            <button id="seven" onclick="display(7)">7</button>
+            <button id="eight" onclick="display(8)">8</button>
+            <button id="nine" onclick="display(9)">9</button>
+
+            <button id="mul" onclick="display('*')"class="opt">&#215;</button>
+
+            <button id="four" onclick="display(4)">4</button>
+            <button id="five" onclick="display(5)">5</button>
+            <button id="six" onclick="display(6)">6</button>
+
+            <button id="sub" onclick="display('-')" class="opt">&#8722;</button>
+
+            <button id="three" onclick="display(1)">1</button>
+            <button id="two" onclick="display(2)">2</button>
+            <button id="one" onclick="display(3)">3</button>
+
+            <button id="add" onclick="display('+')" class="opt">&#43;</button>
+
+            <button id="ac" onclick="clearBox()" class="ac">AC</button>
+
+            <button id="zero" onclick="" class="opt">0</button>
+
+            <button id="div" onclick="display('/')" class="opt">&#247;</button>
+
+            <button id="equal" onclick="evaluateExp()" class="opt">&#61;</button>
+
+            <button id="del" onclick=" removeLast()">&#9003;</button>
+            
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
